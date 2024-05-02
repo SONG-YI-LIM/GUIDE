@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Pretendard'; 
+	font-style: normal; 
+	font-weight: 300; 
+	src:url("../fonts/PretendardGOV-Light.otf") format('opentype'),
+        url("../fonts/PretendardGOV-Light.woff") format('woff'),
+        url("../fonts/PretendardGOV-Light.woff2") format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard'; 
+	font-style: normal; 
+	font-weight: 400; 
+	src:url("../fonts/PretendardGOV-Regular.otf") format('opentype'),
+        url("../fonts/PretendardGOV-Regular.woff") format('woff'),
+        url("../fonts/PretendardGOV-Regular.woff2") format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard'; 
+	font-style: normal; 
+	font-weight: 500; 
+	src:url("../fonts/PretendardGOV-Medium.otf") format('opentype'),
+        url("../fonts/PretendardGOV-Medium.woff") format('woff'),
+        url("../fonts/PretendardGOV-Medium.woff2") format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard'; 
+	font-style: normal; 
+	font-weight: 700; 
+	src:url("../fonts/PretendardGOV-Bold.otf") format('opentype'),
+        url("../fonts/PretendardGOV-Bold.woff") format('woff'),
+        url("../fonts/PretendardGOV-Bold.woff2") format('woff2');
+}
