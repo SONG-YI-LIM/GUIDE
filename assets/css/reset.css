@@ -50,6 +50,7 @@ table {
 }
 /* 추가 */
 button {
+    padding: 0;
     border: 0;
     background-color: transparent;
     cursor: pointer;

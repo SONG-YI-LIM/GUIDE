@@ -14,22 +14,53 @@
     background-color: #EDF1F5;
 }
 #header-top .inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
     padding: 8px 16px;
 }
 #header-top .toggle-head .nuri-txt {
+    line-height: 15px;
     font-size: 15px;
 }
 #header-top .toggle-head .btn {
-    color: #003675
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    line-height: 16px;
+    font-size: 14px;
+    color: #003675;
+}
+#header-top .toggle-head .btn:after {
+    display: inline-flex;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url("../images/ico-arrow-down.svg") no-repeat center/contain;
+    transition: 0.4s ease-in-out;
+}
+#header-top .toggle-head.active .btn:after {
+    transform: rotate(-180deg)
 }
 #header-top .toggle-body {
-    
+    overflow: hidden;
+    height: 0;
+    transition: 0.4s ease-in-out;
 }
 #header-top .toggle-body:before {
     display: flex;
     content: "";
     border-top: 1px solid #CDD7E4;
 }
+#header-top .toggle-head.active .toggle-body {
+    /* display: block; */
+}
 #header-top .toggle-body .inner {
     padding: 24px 16px;
+}
+
+.btn:focus {
+    border-radius: 6px;
+    outline-offset: 2px;
+    outline: 2px solid rgba(36, 107, 235, 0.8);
 }
