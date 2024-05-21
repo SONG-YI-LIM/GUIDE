@@ -7,6 +7,7 @@
     <!-- <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" /> -->
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/jquery-2.2.4.js"></script>
+    <script src="../assets/js/jquery-throttle-debounce.js"></script>
     <script src="../assets/js/common.js"></script>
 </head>
 <body>
@@ -17,7 +18,7 @@
         <div class="toggle-wrap">
             <div class="toggle-head">
                 <div class="inner">
-                    <span class="nuri-txt">공식 배너는 사용자가 대한민국 정보 조직 및 관련 기관에서 운영 몇 관리하는 디지털 정부서비스임을 식별할 수 있도록 제공하는 정보 배너이다.</span>
+                    <span class="nuri-txt">공식 배너는 사용자가 대한민국 정보 조직 및 관련 기관에서 운영 및 관리하는 디지털 정부서비스임을 식별할 수 있도록 제공하는 정보 배너이다.</span>
                     <button type="button" class="btn btn-txt ico-arr-down toggle-btn xsm">클릭<span class="sr-only">열기</span></button>
                 </div>
             </div>  
@@ -52,16 +53,16 @@
                 <div class="inner">
                     <div class="head-etc">
                         <ul class="etc-ul">
-                            <li class="li"><a href="#" class="btn btn-txt ico-go xsm" target="_blank">어린이 정부포털</a></li>
+                            <li class="li"><a href="#" class="btn btn-txt ico-go xsm" target="_blank">바로가기</a></li>
                             <li class="li">
                                 <div class="krds-drop-wrap">
-                                    <button type="button" class="btn btn-txt ico-arr-down xsm drop-btn">지원<span class="sr-only">열기</span></button>
+                                    <button type="button" class="btn btn-txt ico-arr-down xsm drop-btn">목록01<span class="sr-only">열기</span></button>
                                     <div class="drop-menu">
                                         <div class="drop-in">
                                             <ul class="drop-list">
-                                                <li><a href="#" class="item-link">인증센터</a>
+                                                <li><a href="#" class="item-link">목록01-1</a>
                                                 </li>
-                                                <li><a href="#" class="item-link">누리집안내지도</a></li>
+                                                <li><a href="#" class="item-link">목록01-2</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -69,7 +70,7 @@
                             </li>
                             <li class="li">
                                 <div class="krds-drop-wrap zoom-drop">
-                                    <button type="button" class="btn btn-txt ico-arr-down xsm drop-btn">화면크기</button>
+                                    <button type="button" class="btn btn-txt ico-arr-down xsm drop-btn">목록02</button>
                                     <div class="drop-menu">
                                         <div class="drop-in">
                                             <ul class="drop-list">
@@ -88,7 +89,7 @@
                             </li>
                             <li class="li">
                                 <div class="krds-drop-wrap">
-                                    <button type="button" class="btn btn-txt ico-arr-down xsm drop-btn">Language</button>
+                                    <button type="button" class="btn btn-txt ico-arr-down xsm drop-btn">목록03</button>
                                     <div class="drop-menu">
                                         <div class="drop-in">
                                             <ul class="drop-list">
@@ -105,9 +106,8 @@
                     <div class="head-in">
                         <h1 class="logo">
                             <a href="worksheet.html">
-                                <img src="../../resources/img/pattern/layout/head_logo.svg" class="logo-im" alt="대한민국정부">
-                                <img src="../../resources/img/pattern/layout/head_logo_slogan.svg" class="logo-slogan"
-                                     alt="다시 대한민국! 새로운 국민의 나라">
+                                <img src="../assets/images/head_logo.svg" class="logo-im" alt="대한민국정부">
+                                <img src="../assets/images/head_logo_slogan.svg" class="logo-slogan" alt="다시 대한민국! 새로운 국민의 나라">
                             </a>
                         </h1>
                         <div class="right ">
@@ -116,7 +116,7 @@
                             <button type="button" class="btn-navi login">로그인</button>
                             <button type="button" class="btn-navi join">회원가입</button>
                             <div class="krds-drop-wrap my-drop">
-                                <button type="button" class="btn-navi my drop-btn">나의 GOV</button>
+                                <button type="button" class="btn-navi my drop-btn">나의 GOV<span class="sr-only">열기</span></button>
                                 <div class="drop-menu">
                                     <div class="drop-in">
                                         <div class="drop-top-info">
@@ -153,21 +153,20 @@
                 <div class="inner">
                     <ul class="gnb">
                         <li class="li">
-                            <a href="#" class="mn">민원</a>
+                            <a href="#" class="mn">1depth-1<span class="sr-only">열기</span></a>
                             <div class="w-gnb-wrap">
                                 <div class="inner">
                                     <div class="w-gnb-menu">
                                         <div class="menu-wrap">
                                             <ul class="ul">
-                                                <li><button type="button" class="sm active"
-                                                            data-id="w-gnb-sm1-1">2depth1</button>
+                                                <li><button type="button" class="sm active" data-id="w-gnb-sm1-1">2depth-1-1</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm1-2">2depth2</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm1-2">2depth-1-2</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm1-3">2depth3</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm1-3">2depth-1-3</button>
                                                 </li>
-                                                <li><a href="#" class="sm ico-go" target="_blank">2depth4_외부사이트</a></li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm1-5">2depth5</button>
+                                                <li><a href="#" class="sm ico-go" target="_blank">2depth-1-4_외부사이트</a></li>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm1-5">2depth-1-5</button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -175,21 +174,21 @@
                                             <div class="submenu-in" id="w-gnb-sm1-1">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth1-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-1-1-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-1-1-1</a></li>
+                                                        <li><a href="#">3depth-1-1-2</a></li>
+                                                        <li><a href="#">3depth-1-1-3</a></li>
+                                                        <li><a href="#">3depth-1-1-4</a></li>
+                                                        <li><a href="#">3depth-1-1-5</a></li>
+                                                        <li><a href="#">3depth-1-1-6</a></li>
+                                                        <li><a href="#">3depth-1-1-7</a></li>
+                                                        <li><a href="#">3depth-1-1-8</a></li>
+                                                        <li><a href="#">3depth-1-1-9</a></li>
+                                                        <li><a href="#">3depth-1-1-10</a></li>
+                                                        <li><a href="#">3depth-1-1-11</a></li>
+                                                        <li><a href="#">3depth-1-1-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -202,21 +201,21 @@
                                             <div class="submenu-in between" id="w-gnb-sm1-2">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth2-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-1-2-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-1-2-1</a></li>
+                                                        <li><a href="#">3depth-1-2-2</a></li>
+                                                        <li><a href="#">3depth-1-2-3</a></li>
+                                                        <li><a href="#">3depth-1-2-4</a></li>
+                                                        <li><a href="#">3depth-1-2-5</a></li>
+                                                        <li><a href="#">3depth-1-2-6</a></li>
+                                                        <li><a href="#">3depth-1-2-7</a></li>
+                                                        <li><a href="#">3depth-1-2-8</a></li>
+                                                        <li><a href="#">3depth-1-2-9</a></li>
+                                                        <li><a href="#">3depth-1-2-10</a></li>
+                                                        <li><a href="#">3depth-1-2-11</a></li>
+                                                        <li><a href="#">3depth-1-2-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -228,21 +227,21 @@
                                             <div class="submenu-in" id="w-gnb-sm1-3">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth3-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-1-3-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-1-3-1</a></li>
+                                                        <li><a href="#">3depth-1-3-2</a></li>
+                                                        <li><a href="#">3depth-1-3-3</a></li>
+                                                        <li><a href="#">3depth-1-3-4</a></li>
+                                                        <li><a href="#">3depth-1-3-5</a></li>
+                                                        <li><a href="#">3depth-1-3-6</a></li>
+                                                        <li><a href="#">3depth-1-3-7</a></li>
+                                                        <li><a href="#">3depth-1-3-8</a></li>
+                                                        <li><a href="#">3depth-1-3-9</a></li>
+                                                        <li><a href="#">3depth-1-3-10</a></li>
+                                                        <li><a href="#">3depth-1-3-11</a></li>
+                                                        <li><a href="#">3depth-1-3-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -255,21 +254,21 @@
                                             <div class="submenu-in" id="w-gnb-sm1-5">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth5-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-1-4-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-1-4-1</a></li>
+                                                        <li><a href="#">3depth-1-4-2</a></li>
+                                                        <li><a href="#">3depth-1-4-3</a></li>
+                                                        <li><a href="#">3depth-1-4-4</a></li>
+                                                        <li><a href="#">3depth-1-4-5</a></li>
+                                                        <li><a href="#">3depth-1-4-6</a></li>
+                                                        <li><a href="#">3depth-1-4-7</a></li>
+                                                        <li><a href="#">3depth-1-4-8</a></li>
+                                                        <li><a href="#">3depth-1-4-9</a></li>
+                                                        <li><a href="#">3depth-1-4-10</a></li>
+                                                        <li><a href="#">3depth-1-4-11</a></li>
+                                                        <li><a href="#">3depth-1-4-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -284,21 +283,20 @@
                             </div>
                         </li>
                         <li class="li">
-                            <a href="#" class="mn">국민참여</a>
+                            <a href="#" class="mn">1depth-2<span class="sr-only">열기</span></a>
                             <div class="w-gnb-wrap">
                                 <div class="inner">
                                     <div class="w-gnb-menu">
                                         <div class="menu-wrap">
                                             <ul class="ul">
-                                                <li><button type="button" class="sm active"
-                                                            data-id="w-gnb-sm2-1">2depth1</button>
+                                                <li><button type="button" class="sm active" data-id="w-gnb-sm2-1">2depth-2-1</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm2-2">2depth2</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm2-2">2depth-2-2</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm2-3">2depth3</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm2-3">2depth-2-3</button>
                                                 </li>
-                                                <li><a href="#" class="sm ico-go" target="_blank">2depth4_외부사이트</a></li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm2-5">2depth5</button>
+                                                <li><a href="#" class="sm ico-go" target="_blank">2depth-2-4_외부사이트</a></li>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm2-5">2depth-2-5</button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -306,21 +304,21 @@
                                             <div class="submenu-in" id="w-gnb-sm2-1">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth1-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-2-1-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-2-1-1</a></li>
+                                                        <li><a href="#">3depth-2-1-2</a></li>
+                                                        <li><a href="#">3depth-2-1-3</a></li>
+                                                        <li><a href="#">3depth-2-1-4</a></li>
+                                                        <li><a href="#">3depth-2-1-5</a></li>
+                                                        <li><a href="#">3depth-2-1-6</a></li>
+                                                        <li><a href="#">3depth-2-1-7</a></li>
+                                                        <li><a href="#">3depth-2-1-8</a></li>
+                                                        <li><a href="#">3depth-2-1-9</a></li>
+                                                        <li><a href="#">3depth-2-1-10</a></li>
+                                                        <li><a href="#">3depth-2-1-11</a></li>
+                                                        <li><a href="#">3depth-2-1-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -332,21 +330,21 @@
                                             <div class="submenu-in" id="w-gnb-sm2-2">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth2-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-2-2-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-2-2-1</a></li>
+                                                        <li><a href="#">3depth-2-2-2</a></li>
+                                                        <li><a href="#">3depth-2-2-3</a></li>
+                                                        <li><a href="#">3depth-2-2-4</a></li>
+                                                        <li><a href="#">3depth-2-2-5</a></li>
+                                                        <li><a href="#">3depth-2-2-6</a></li>
+                                                        <li><a href="#">3depth-2-2-7</a></li>
+                                                        <li><a href="#">3depth-2-2-8</a></li>
+                                                        <li><a href="#">3depth-2-2-9</a></li>
+                                                        <li><a href="#">3depth-2-2-10</a></li>
+                                                        <li><a href="#">3depth-2-2-11</a></li>
+                                                        <li><a href="#">3depth-2-2-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -358,21 +356,21 @@
                                             <div class="submenu-in" id="w-gnb-sm2-3">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth3-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-2-3-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-2-3-1</a></li>
+                                                        <li><a href="#">3depth-2-3-2</a></li>
+                                                        <li><a href="#">3depth-2-3-3</a></li>
+                                                        <li><a href="#">3depth-2-3-4</a></li>
+                                                        <li><a href="#">3depth-2-3-5</a></li>
+                                                        <li><a href="#">3depth-2-3-6</a></li>
+                                                        <li><a href="#">3depth-2-3-7</a></li>
+                                                        <li><a href="#">3depth-2-3-8</a></li>
+                                                        <li><a href="#">3depth-2-3-9</a></li>
+                                                        <li><a href="#">3depth-2-3-10</a></li>
+                                                        <li><a href="#">3depth-2-3-11</a></li>
+                                                        <li><a href="#">3depth-2-3-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -384,21 +382,21 @@
                                             <div class="submenu-in" id="w-gnb-sm2-5">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth5-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-2-4-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-2-4-1</a></li>
+                                                        <li><a href="#">3depth-2-4-2</a></li>
+                                                        <li><a href="#">3depth-2-4-3</a></li>
+                                                        <li><a href="#">3depth-2-4-4</a></li>
+                                                        <li><a href="#">3depth-2-4-5</a></li>
+                                                        <li><a href="#">3depth-2-4-6</a></li>
+                                                        <li><a href="#">3depth-2-4-7</a></li>
+                                                        <li><a href="#">3depth-2-4-8</a></li>
+                                                        <li><a href="#">3depth-2-4-9</a></li>
+                                                        <li><a href="#">3depth-2-4-10</a></li>
+                                                        <li><a href="#">3depth-2-4-11</a></li>
+                                                        <li><a href="#">3depth-2-4-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -412,21 +410,20 @@
                             </div>
                         </li>
                         <li class="li">
-                            <a href="#" class="mn">뉴스･소식</a>
+                            <a href="#" class="mn">1depth-3<span class="sr-only">열기</span></a>
                             <div class="w-gnb-wrap">
                                 <div class="inner">
                                     <div class="w-gnb-menu">
                                         <div class="menu-wrap">
                                             <ul class="ul">
-                                                <li><button type="button" class="sm active"
-                                                            data-id="w-gnb-sm3-1">2depth1</button>
+                                                <li><button type="button" class="sm active" data-id="w-gnb-sm3-1">2depth-3-1</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm3-2">2depth2</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm3-2">2depth-3-2</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm3-3">2depth3</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm3-3">2depth-3-3</button>
                                                 </li>
-                                                <li><a href="#" class="sm ico-go" target="_blank">2depth4_외부사이트</a></li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm3-5">2depth5</button>
+                                                <li><a href="#" class="sm ico-go" target="_blank">2depth-3-4_외부사이트</a></li>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm3-5">2depth-3-5</button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -434,21 +431,21 @@
                                             <div class="submenu-in" id="w-gnb-sm3-1">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth1-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-3-1-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-3-1-1</a></li>
+                                                        <li><a href="#">3depth-3-1-2</a></li>
+                                                        <li><a href="#">3depth-3-1-3</a></li>
+                                                        <li><a href="#">3depth-3-1-4</a></li>
+                                                        <li><a href="#">3depth-3-1-5</a></li>
+                                                        <li><a href="#">3depth-3-1-6</a></li>
+                                                        <li><a href="#">3depth-3-1-7</a></li>
+                                                        <li><a href="#">3depth-3-1-8</a></li>
+                                                        <li><a href="#">3depth-3-1-9</a></li>
+                                                        <li><a href="#">3depth-3-1-10</a></li>
+                                                        <li><a href="#">3depth-3-1-11</a></li>
+                                                        <li><a href="#">3depth-3-1-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -460,21 +457,21 @@
                                             <div class="submenu-in" id="w-gnb-sm3-2">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth2-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-3-2-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-3-2-1</a></li>
+                                                        <li><a href="#">3depth-3-2-2</a></li>
+                                                        <li><a href="#">3depth-3-2-3</a></li>
+                                                        <li><a href="#">3depth-3-2-4</a></li>
+                                                        <li><a href="#">3depth-3-2-5</a></li>
+                                                        <li><a href="#">3depth-3-2-6</a></li>
+                                                        <li><a href="#">3depth-3-2-7</a></li>
+                                                        <li><a href="#">3depth-3-2-8</a></li>
+                                                        <li><a href="#">3depth-3-2-9</a></li>
+                                                        <li><a href="#">3depth-3-2-10</a></li>
+                                                        <li><a href="#">3depth-3-2-11</a></li>
+                                                        <li><a href="#">3depth-3-2-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -486,21 +483,21 @@
                                             <div class="submenu-in" id="w-gnb-sm3-3">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth3-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-3-3-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-3-3-1</a></li>
+                                                        <li><a href="#">3depth-3-3-2</a></li>
+                                                        <li><a href="#">3depth-3-3-3</a></li>
+                                                        <li><a href="#">3depth-3-3-4</a></li>
+                                                        <li><a href="#">3depth-3-3-5</a></li>
+                                                        <li><a href="#">3depth-3-3-6</a></li>
+                                                        <li><a href="#">3depth-3-3-7</a></li>
+                                                        <li><a href="#">3depth-3-3-8</a></li>
+                                                        <li><a href="#">3depth-3-3-9</a></li>
+                                                        <li><a href="#">3depth-3-3-10</a></li>
+                                                        <li><a href="#">3depth-3-3-11</a></li>
+                                                        <li><a href="#">3depth-3-3-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -512,21 +509,21 @@
                                             <div class="submenu-in" id="w-gnb-sm3-5">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth5-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-3-4-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-3-4-1</a></li>
+                                                        <li><a href="#">3depth-3-4-2</a></li>
+                                                        <li><a href="#">3depth-3-4-3</a></li>
+                                                        <li><a href="#">3depth-3-4-4</a></li>
+                                                        <li><a href="#">3depth-3-4-5</a></li>
+                                                        <li><a href="#">3depth-3-4-6</a></li>
+                                                        <li><a href="#">3depth-3-4-7</a></li>
+                                                        <li><a href="#">3depth-3-4-8</a></li>
+                                                        <li><a href="#">3depth-3-4-9</a></li>
+                                                        <li><a href="#">3depth-3-4-10</a></li>
+                                                        <li><a href="#">3depth-3-4-11</a></li>
+                                                        <li><a href="#">3depth-3-4-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -540,21 +537,21 @@
                             </div>
                         </li>
                         <li class="li">
-                            <a href="#" class="mn">정보공개</a>
+                            <a href="#" class="mn">1depth-4<span class="sr-only">열기</span></a>
                             <div class="w-gnb-wrap">
                                 <div class="inner">
                                     <div class="w-gnb-menu">
                                         <div class="menu-wrap">
                                             <ul class="ul">
                                                 <li><button type="button" class="sm active"
-                                                            data-id="w-gnb-sm4-1">2depth1</button>
+                                                            data-id="w-gnb-sm4-1">2depth-4-1</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm4-2">2depth2</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm4-2">2depth-4-2</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm4-3">2depth3</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm4-3">2depth-4-3</button>
                                                 </li>
-                                                <li><a href="#" class="sm ico-go" target="_blank">2depth4_외부사이트</a></li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm4-5">2depth5</button>
+                                                <li><a href="#" class="sm ico-go" target="_blank">2depth-4-4_외부사이트</a></li>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm4-5">2depth-4-5</button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -562,21 +559,21 @@
                                             <div class="submenu-in" id="w-gnb-sm4-1">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth1-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-4-1-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-4-1-1</a></li>
+                                                        <li><a href="#">3depth-4-1-2</a></li>
+                                                        <li><a href="#">3depth-4-1-3</a></li>
+                                                        <li><a href="#">3depth-4-1-4</a></li>
+                                                        <li><a href="#">3depth-4-1-5</a></li>
+                                                        <li><a href="#">3depth-4-1-6</a></li>
+                                                        <li><a href="#">3depth-4-1-7</a></li>
+                                                        <li><a href="#">3depth-4-1-8</a></li>
+                                                        <li><a href="#">3depth-4-1-9</a></li>
+                                                        <li><a href="#">3depth-4-1-10</a></li>
+                                                        <li><a href="#">3depth-4-1-11</a></li>
+                                                        <li><a href="#">3depth-4-1-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -588,21 +585,21 @@
                                             <div class="submenu-in" id="w-gnb-sm4-2">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth2-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-4-2-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-4-2-1</a></li>
+                                                        <li><a href="#">3depth-4-2-2</a></li>
+                                                        <li><a href="#">3depth-4-2-3</a></li>
+                                                        <li><a href="#">3depth-4-2-4</a></li>
+                                                        <li><a href="#">3depth-4-2-5</a></li>
+                                                        <li><a href="#">3depth-4-2-6</a></li>
+                                                        <li><a href="#">3depth-4-2-7</a></li>
+                                                        <li><a href="#">3depth-4-2-8</a></li>
+                                                        <li><a href="#">3depth-4-2-9</a></li>
+                                                        <li><a href="#">3depth-4-2-10</a></li>
+                                                        <li><a href="#">3depth-4-2-11</a></li>
+                                                        <li><a href="#">3depth-4-2-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -614,21 +611,21 @@
                                             <div class="submenu-in" id="w-gnb-sm4-3">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth3-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-4-3-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-4-3-1</a></li>
+                                                        <li><a href="#">3depth-4-3-2</a></li>
+                                                        <li><a href="#">3depth-4-3-3</a></li>
+                                                        <li><a href="#">3depth-4-3-4</a></li>
+                                                        <li><a href="#">3depth-4-3-5</a></li>
+                                                        <li><a href="#">3depth-4-3-6</a></li>
+                                                        <li><a href="#">3depth-4-3-7</a></li>
+                                                        <li><a href="#">3depth-4-3-8</a></li>
+                                                        <li><a href="#">3depth-4-3-9</a></li>
+                                                        <li><a href="#">3depth-4-3-10</a></li>
+                                                        <li><a href="#">3depth-4-3-11</a></li>
+                                                        <li><a href="#">3depth-4-3-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -640,21 +637,21 @@
                                             <div class="submenu-in" id="w-gnb-sm4-5">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth5-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-4-4-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-4-4-1</a></li>
+                                                        <li><a href="#">3depth-4-4-2</a></li>
+                                                        <li><a href="#">3depth-4-4-3</a></li>
+                                                        <li><a href="#">3depth-4-4-4</a></li>
+                                                        <li><a href="#">3depth-4-4-5</a></li>
+                                                        <li><a href="#">3depth-4-4-6</a></li>
+                                                        <li><a href="#">3depth-4-4-7</a></li>
+                                                        <li><a href="#">3depth-4-4-8</a></li>
+                                                        <li><a href="#">3depth-4-4-9</a></li>
+                                                        <li><a href="#">3depth-4-4-10</a></li>
+                                                        <li><a href="#">3depth-4-4-11</a></li>
+                                                        <li><a href="#">3depth-4-4-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -668,21 +665,20 @@
                             </div>
                         </li>
                         <li class="li">
-                            <a href="#" class="mn">정책자료</a>
+                            <a href="#" class="mn">1depth-5<span class="sr-only">열기</span></a>
                             <div class="w-gnb-wrap">
                                 <div class="inner">
                                     <div class="w-gnb-menu">
                                         <div class="menu-wrap">
                                             <ul class="ul">
-                                                <li><button type="button" class="sm active"
-                                                            data-id="w-gnb-sm5-1">2depth1</button>
+                                                <li><button type="button" class="sm active" data-id="w-gnb-sm5-1">2depth-5-1</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm5-2">2depth2</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm5-2">2depth-5-2</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm5-3">2depth3</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm5-3">2depth-5-3</button>
                                                 </li>
-                                                <li><a href="#" class="sm ico-go" target="_blank">2depth4_외부사이트</a></li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm5-5">2depth5</button>
+                                                <li><a href="#" class="sm ico-go" target="_blank">2depth-5-4_외부사이트</a></li>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm5-5">2depth-5-5</button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -690,21 +686,21 @@
                                             <div class="submenu-in" id="w-gnb-sm5-1">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth1-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-5-1-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-5-1-1</a></li>
+                                                        <li><a href="#">3depth-5-1-2</a></li>
+                                                        <li><a href="#">3depth-5-1-3</a></li>
+                                                        <li><a href="#">3depth-5-1-4</a></li>
+                                                        <li><a href="#">3depth-5-1-5</a></li>
+                                                        <li><a href="#">3depth-5-1-6</a></li>
+                                                        <li><a href="#">3depth-5-1-7</a></li>
+                                                        <li><a href="#">3depth-5-1-8</a></li>
+                                                        <li><a href="#">3depth-5-1-9</a></li>
+                                                        <li><a href="#">3depth-5-1-10</a></li>
+                                                        <li><a href="#">3depth-5-1-11</a></li>
+                                                        <li><a href="#">3depth-5-1-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -716,21 +712,21 @@
                                             <div class="submenu-in" id="w-gnb-sm5-2">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth2-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-5-2-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-5-2-1</a></li>
+                                                        <li><a href="#">3depth-5-2-2</a></li>
+                                                        <li><a href="#">3depth-5-2-3</a></li>
+                                                        <li><a href="#">3depth-5-2-4</a></li>
+                                                        <li><a href="#">3depth-5-2-5</a></li>
+                                                        <li><a href="#">3depth-5-2-6</a></li>
+                                                        <li><a href="#">3depth-5-2-7</a></li>
+                                                        <li><a href="#">3depth-5-2-8</a></li>
+                                                        <li><a href="#">3depth-5-2-9</a></li>
+                                                        <li><a href="#">3depth-5-2-10</a></li>
+                                                        <li><a href="#">3depth-5-2-11</a></li>
+                                                        <li><a href="#">3depth-5-2-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -742,21 +738,21 @@
                                             <div class="submenu-in" id="w-gnb-sm5-3">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth3-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-5-3-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-5-3-1</a></li>
+                                                        <li><a href="#">3depth-5-3-2</a></li>
+                                                        <li><a href="#">3depth-5-3-3</a></li>
+                                                        <li><a href="#">3depth-5-3-4</a></li>
+                                                        <li><a href="#">3depth-5-3-5</a></li>
+                                                        <li><a href="#">3depth-5-3-6</a></li>
+                                                        <li><a href="#">3depth-5-3-7</a></li>
+                                                        <li><a href="#">3depth-5-3-8</a></li>
+                                                        <li><a href="#">3depth-5-3-9</a></li>
+                                                        <li><a href="#">3depth-5-3-10</a></li>
+                                                        <li><a href="#">3depth-5-3-11</a></li>
+                                                        <li><a href="#">3depth-5-3-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -768,21 +764,21 @@
                                             <div class="submenu-in" id="w-gnb-sm5-5">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth5-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-5-4-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-5-4-1</a></li>
+                                                        <li><a href="#">3depth-5-4-2</a></li>
+                                                        <li><a href="#">3depth-5-4-3</a></li>
+                                                        <li><a href="#">3depth-5-4-4</a></li>
+                                                        <li><a href="#">3depth-5-4-5</a></li>
+                                                        <li><a href="#">3depth-5-4-6</a></li>
+                                                        <li><a href="#">3depth-5-4-7</a></li>
+                                                        <li><a href="#">3depth-5-4-8</a></li>
+                                                        <li><a href="#">3depth-5-4-9</a></li>
+                                                        <li><a href="#">3depth-5-4-10</a></li>
+                                                        <li><a href="#">3depth-5-4-11</a></li>
+                                                        <li><a href="#">3depth-5-4-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -796,21 +792,20 @@
                             </div>
                         </li>
                         <li class="li">
-                            <a href="#" class="mn">이용안내</a>
+                            <a href="#" class="mn">1depth-6<span class="sr-only">열기</span></a>
                             <div class="w-gnb-wrap">
                                 <div class="inner">
                                     <div class="w-gnb-menu">
                                         <div class="menu-wrap">
                                             <ul class="ul">
-                                                <li><button type="button" class="sm active"
-                                                            data-id="w-gnb-sm6-1">2depth1</button>
+                                                <li><button type="button" class="sm active" data-id="w-gnb-sm6-1">2depth-5-1</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm6-2">2depth2</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm6-2">2depth-5-2</button>
                                                 </li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm6-3">2depth3</button>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm6-3">2depth-5-3</button>
                                                 </li>
-                                                <li><a href="#" class="sm ico-go" target="_blank">2depth4_외부사이트</a></li>
-                                                <li><button type="button" class="sm" data-id="w-gnb-sm6-5">2depth5</button>
+                                                <li><a href="#" class="sm ico-go" target="_blank">2depth-5-4_외부사이트</a></li>
+                                                <li><button type="button" class="sm" data-id="w-gnb-sm6-5">2depth-5-5</button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -818,21 +813,21 @@
                                             <div class="submenu-in" id="w-gnb-sm6-1">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth1-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-6-1-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-6-1-1</a></li>
+                                                        <li><a href="#">3depth-6-1-2</a></li>
+                                                        <li><a href="#">3depth-6-1-3</a></li>
+                                                        <li><a href="#">3depth-6-1-4</a></li>
+                                                        <li><a href="#">3depth-6-1-5</a></li>
+                                                        <li><a href="#">3depth-6-1-6</a></li>
+                                                        <li><a href="#">3depth-6-1-7</a></li>
+                                                        <li><a href="#">3depth-6-1-8</a></li>
+                                                        <li><a href="#">3depth-6-1-9</a></li>
+                                                        <li><a href="#">3depth-6-1-10</a></li>
+                                                        <li><a href="#">3depth-6-1-11</a></li>
+                                                        <li><a href="#">3depth-6-1-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -844,21 +839,21 @@
                                             <div class="submenu-in" id="w-gnb-sm6-2">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth2-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-6-2-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-6-2-1</a></li>
+                                                        <li><a href="#">3depth-6-2-2</a></li>
+                                                        <li><a href="#">3depth-6-2-3</a></li>
+                                                        <li><a href="#">3depth-6-2-4</a></li>
+                                                        <li><a href="#">3depth-6-2-5</a></li>
+                                                        <li><a href="#">3depth-6-2-6</a></li>
+                                                        <li><a href="#">3depth-6-2-7</a></li>
+                                                        <li><a href="#">3depth-6-2-8</a></li>
+                                                        <li><a href="#">3depth-6-2-9</a></li>
+                                                        <li><a href="#">3depth-6-2-10</a></li>
+                                                        <li><a href="#">3depth-6-2-11</a></li>
+                                                        <li><a href="#">3depth-6-2-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -870,21 +865,21 @@
                                             <div class="submenu-in" id="w-gnb-sm6-3">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth3-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-6-3-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-6-3-1</a></li>
+                                                        <li><a href="#">3depth-6-3-2</a></li>
+                                                        <li><a href="#">3depth-6-3-3</a></li>
+                                                        <li><a href="#">3depth-6-3-4</a></li>
+                                                        <li><a href="#">3depth-6-3-5</a></li>
+                                                        <li><a href="#">3depth-6-3-6</a></li>
+                                                        <li><a href="#">3depth-6-3-7</a></li>
+                                                        <li><a href="#">3depth-6-3-8</a></li>
+                                                        <li><a href="#">3depth-6-3-9</a></li>
+                                                        <li><a href="#">3depth-6-3-10</a></li>
+                                                        <li><a href="#">3depth-6-3-11</a></li>
+                                                        <li><a href="#">3depth-6-3-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">
@@ -896,21 +891,21 @@
                                             <div class="submenu-in" id="w-gnb-sm6-5">
                                                 <div class="sub-in">
                                                     <h3 class="sub-tit">
-                                                        <a href="#" class="btn btn-txt ico-arr lg">2depth5-title</a>
+                                                        <a href="#" class="btn btn-txt ico-arr lg">3depth-6-4-title</a>
                                                     </h3>
                                                     <ul class="sub-ul">
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title111</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
-                                                        <li><a href="#">3depth-title</a></li>
+                                                        <li><a href="#">3depth-6-4-1</a></li>
+                                                        <li><a href="#">3depth-6-4-2</a></li>
+                                                        <li><a href="#">3depth-6-4-3</a></li>
+                                                        <li><a href="#">3depth-6-4-4</a></li>
+                                                        <li><a href="#">3depth-6-4-5</a></li>
+                                                        <li><a href="#">3depth-6-4-6</a></li>
+                                                        <li><a href="#">3depth-6-4-7</a></li>
+                                                        <li><a href="#">3depth-6-4-8</a></li>
+                                                        <li><a href="#">3depth-6-4-9</a></li>
+                                                        <li><a href="#">3depth-6-4-10</a></li>
+                                                        <li><a href="#">3depth-6-4-11</a></li>
+                                                        <li><a href="#">3depth-6-4-12</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="sub-ban">

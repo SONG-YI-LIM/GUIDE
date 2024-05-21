@@ -1,3 +1,13 @@
+$(function(){
+    common.srOnlyEvent();
+    common.toggleEvent();
+    common.dropEvent();
+
+    fn_layout();
+        
+});
+
+
 /* 공통 */
 const common = {
     // init: () => {
@@ -26,7 +36,6 @@ const common = {
                 const toggleHead = $('.toggle-head');
                 const toggleBody = $('.toggle-body');
                 const toggleBodyH = $('.toggle-body .inner').outerHeight();
-                console.log(toggleBodyH)
                 if(!toggleHead.hasClass('active')){
                     toggleHead.addClass('active');
                     toggleBody.height(toggleBodyH);
@@ -47,15 +56,12 @@ const common = {
                     $(this).siblings().css({"display":"block"});
                 }else{
                     common.dropClose();
-                    console.log("none");
-                    // $(this).siblings().css({"display":"noe"});
                 }
             });
         });
 
-        // 여기부터 시작
-        $(document).on('click', function(){
-
+        $(document).on('click', function(e){
+            if(!e.target.closest('.krds-drop-wrap')) common.dropClose();
         });
     },
 
@@ -68,8 +74,34 @@ const common = {
     },
 }
 
-$(function(){
-    common.srOnlyEvent();
-    common.toggleEvent();
-    common.dropEvent();
-});
+/* 웹 : 전체메뉴 */ 
+const fn_layout = () => {
+
+
+    // resize evnet
+    // $(window).resize($throttle(100, function () {
+    //     console.log("hello");
+        
+    //     // let windowW = window.innerWidth;
+    //     // windowW < 1161 ? $('#header').addClass('mob') : $('#header').removeClass('mob')
+    // })().resize()
+
+    const headGnb = $('.head-gnb');
+    const depth01 = headGnb.find('.gnb > li > a');
+    depth01.on('click', function(){
+        if($(this).hasClass('open')){
+            console.log("test01");
+            depth01.removeClass('open');
+            depth01.next().removeClass('is-open');
+        }else{
+            console.log("test02");
+            depth01.removeClass('open');
+            depth01.next().removeClass('is-open');
+            $(this).addClass('open');
+            $(this).next().addClass('is-open')
+        }
+    });
+}
+
+
+
