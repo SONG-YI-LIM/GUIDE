@@ -12,6 +12,8 @@
 
 /* 공식 배너 */
 #header-top {
+    position: relative;
+    z-index: 100;
     width: 100%;
     background-color: #EDF1F5;
 }
@@ -352,8 +354,8 @@
 }
 #header .head-gnb .gnb .li a {
     display: flex;
-    gap: 8px;
     align-items: center;
+    gap: 8px;
 }
 #header .head-gnb .gnb .li .mn {
     padding: 4px 16px 0;
@@ -443,6 +445,9 @@
     background-color: #fff;
 }
 #header .w-gnb-wrap .w-gnb-menu .submenu-wrap .submenu-in {
+    display: none;
+    flex-direction: column;
+    gap: 24px;
     padding: 24px 40px;
 }
 #header .w-gnb-wrap .w-gnb-menu .submenu-wrap .submenu-in.active {
@@ -469,12 +474,69 @@
     height: 24px;
     background: url("../images/ico_arr_20_right.svg") no-repeat center/contain;
 }
-
-
-
-
-
-
+#header .w-gnb-wrap .w-gnb-menu .submenu-wrap .sub-ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#header .w-gnb-wrap .w-gnb-menu .submenu-wrap .sub-ul li {
+    flex: 1 0 25%
+}
+#header .w-gnb-wrap .w-gnb-menu .submenu-wrap .sub-ul a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+#header .w-gnb-wrap .w-gnb-menu .submenu-wrap .sub-ul a::before {
+    content: "･";
+    margin-top: 4px;
+}
+#header .w-gnb-wrap .w-gnb-menu .submenu-wrap .sub-ban {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: #F8F8F8;
+}
+#header .w-gnb-wrap .w-gnb-menu .submenu-wrap .sub-ban .krds-badge {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    border-radius: 4px;
+    height: 24px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #246BEB;
+}
+#header .w-gnb-wrap .w-gnb-menu .submenu-wrap .sub-ban .btn {
+    height: 40px;
+}
+#header .w-gnb-wrap .w-gnb-menu .submenu-wrap .sub-ban .btn:after {
+    display: inline-flex;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../images/ico_arr_20_right.svg") no-repeat center/contain;
+}
+.w-gnb-dim {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .btn-navi.all {
     display: none !important;
+}
+
+/* 풋터 */
+#footer {
+    position: relative;
+    z-index: 100;
+    background-color: #F8F8F8;
 }
