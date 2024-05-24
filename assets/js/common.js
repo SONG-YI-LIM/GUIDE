@@ -163,10 +163,6 @@ const fn_layout = () => {
             }else{
                 GWRAP.removeClass('scroll-up, scroll-down');
             }
-    
-    
-            console.log($scrollY, $conOffsetTop, $conOffsetTop+50)
-            ;
         });
 
     }

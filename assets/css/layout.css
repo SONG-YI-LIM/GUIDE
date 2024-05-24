@@ -368,6 +368,18 @@
         display: flex;
     }
 }
+@media (max-width: 767px) {
+    #header .head-body .btn-navi {
+        gap: 8px;
+        padding: 4px;
+        height: 49px;
+        font-size: 13px;
+    }
+    #header .head-body .btn-navi::before {
+        width: 20px;
+        height: 20px;
+    }
+}
 
 /* 메뉴 영역 */
 #header .head-gnb {
@@ -788,6 +800,77 @@
     #footer .f-btm {
         margin: 0 -16px;
         padding: 32px 16px 0;
+    }
+}
+@media (max-width: 767px) {
+    #footer .foot-quick .inner {
+        flex-direction: column;
+        padding: 0;
+    }
+    #footer .foot-quick .inner .link {
+        padding: 0 16px;
+        min-height: 48px;
+        font-size: 15px;
+    }
+    #footer .foot-quick .inner .link:first-child {
+        border: 0;
+    }
+    #footer .foot-quick .inner .link:not(:first-child) {
+        border-top: 1px solid #D8D8D8;
+    }
+    #footer > .inner {
+        gap: 32px;
+        padding: 32px 16px;
+    }
+    #footer .f-cnt {
+        flex-direction: column;
+    }
+    #footer .f-cnt .f-info {
+        gap: 16px;
+    }
+    #footer .f-cnt .f-info .info-addr {
+        font-size: 15px;
+    }
+    #footer .f-cnt .f-info .info-cs li {
+        display: block;
+        font-size: 15px;
+    }
+    #footer .f-cnt .f-info .info-cs li strong {
+        margin-right: 4px;
+    }
+    #footer .f-cnt .f-link {
+        gap: 32px;
+    }
+    #footer .f-cnt .f-link .link-go {
+        gap: 16px;
+    }
+    #footer .f-cnt .f-link .link-go .btn {
+        height: 16px;
+        font-size: 15px;
+    }
+    #footer .f-cnt .f-link .link-go .btn:after {
+        width: 16px;
+        height: 16px;
+    }
+    #footer .f-btm {
+        flex-direction: column;
+        font-size: 15px;
+    }
+    #footer .f-btm .f-btm-text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #footer .f-btm .f-btm-text .f-menu {
+        gap: 16px 24px;
+    }
+    #footer .f-btm .f-btm-text .f-menu a {
+        padding: 0;
+        height: 22.5px;
+        font-size: 15px;
+    }
+    #footer .f-btm .f-btm-ban .ban-txt {
+        line-height: 16.5px;
+        font-size: 15px;
     }
 }
 
